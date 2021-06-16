@@ -10,9 +10,63 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_06_16_013507) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artworks", force: :cascade do |t|
+    t.string "title"
+    t.integer "year"
+    t.integer "height"
+    t.integer "width"
+    t.integer "depth"
+    t.string "technique"
+    t.text "about"
+    t.text "description"
+    t.string "period"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lives", force: :cascade do |t|
+    t.string "title"
+    t.string "about"
+    t.string "details"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "phases", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.integer "starting_year"
+    t.integer "ending_year"
+    t.string "about"
+    t.string "details"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shows", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.integer "year"
+    t.string "place"
+    t.string "city"
+    t.string "country"
+    t.string "about"
+    t.string "details"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "writings", force: :cascade do |t|
+    t.string "title"
+    t.string "about"
+    t.string "details"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
