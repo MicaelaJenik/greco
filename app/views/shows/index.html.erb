@@ -1,2 +1,29 @@
-<h1>Shows#index</h1>
-<p>Find me in app/views/shows/index.html.erb</p>
+<div class="flex">
+
+  <div>
+    <header>
+      <div class="justify-center px-4 pt-5">
+        <p class="px-2 hover:text-yellow-300 pb-3"><%= link_to "GRECO", root_path %></p>
+        <p class="px-2 hover:text-yellow-300"><%= link_to "BIOGRAFIA", bio_path %></p>
+        <p class="px-2 hover:text-yellow-300"><%= link_to "ETAPAS", phases_path %></p>
+        <p class="px-2 hover:text-yellow-300"><%= link_to "MUESTRAS", shows_path %></p>
+      </div>
+    </header>
+  </div>
+
+  <div class="px-4 pt-5 bg-gray-100">
+    <% @shows.each do |show| %>
+
+      <h1><%= show.title %></h1>
+      <h1><%= show.year %></h1>
+      <h1><%= show.place %></h1>
+      <h1><%= show.city %></h1>
+      <h1><%= show.country %></h1>
+    <% end %>
+  </div>
+
+</div>
+
+
+
+
