@@ -10,3 +10,34 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+
+.menu {
+  // position: fixed;
+  display: block;
+  top: 10px;
+  left: 10px;
+}
+
+.menu_i {
+  display: block;
+  overflow: hidden;
+  width: 25px;
+  line-height: 25px;
+  padding: 10px 0;
+  margin: 10px 0 0;
+}
+
+.menu_i_tx {
+  display: inline-block;
+  vertical-align: top;
+  transform: translate(0,100%) rotate(-90deg);
+  transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.menu_i_tx:after {
+    content: "";
+    float: left;
+    margin-top: 100%;
+}
