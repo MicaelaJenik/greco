@@ -14,3 +14,4 @@ class PhasesController < ApplicationController
     @phases = Phase.all
   end
 end
+

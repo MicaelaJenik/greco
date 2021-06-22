@@ -1,46 +1,7 @@
-<div class="flex">
-
-  <div class="flex-none">
-
-    <div class="left">
-      <div class="bg-gray-100 h-screen px-4 pt-5">
-        <% @phases.each do |phase| %>
-          <h1 class="text-4xl hover:text-yellow-300"><%= link_to phase.title, phase_path(phase) %></h1>
-        <% end %>
-      </div>
-    </div>
-
-    <div class="left w-1/2">
-      <div style="height: 1800px;">
-        <div>
-          <%= image_tag asset_path('nun2.png') %>
-        </div>
-        <div>
-          <%= image_tag asset_path('dorso.jpg') %>
-        </div>
-        <div>
-          <%= image_tag asset_path('fiesta.jpg') %>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex-grow">
-      <div class="right">
-        <div style="height: 1800px;">
-          <%= image_tag asset_path('fiesta.jpg') %>
-        </div>
-      </div>
-    </div>
-
+<div class="left flex-grow">
+  <div class="bg-gray-100 h-screen px-4 pt-5">
+    <% @phases.each do |phase| %>
+    <h1 class="text-4xl hover:text-yellow-300"><%= link_to phase.title, phase_path(phase) %></h1>
+    <% end %>
   </div>
-
-<!-- <div class="bg-gray-100 h-screen px-4 pt-5">
-  <h1 class="hover:text-yellow-300">PRIMERA ETAPA</h1>
-  <h1 class="hover:text-yellow-300">INFORMALISMO</h1>
-  <h1 class="hover:text-yellow-300">LA EXPOSICION RODANTE</h1>
-  <h1 class="hover:text-yellow-300">LAS MONJAS  </h1>
-  <h1 class="hover:text-yellow-300">LA VIDA SOBRE PAPEL</h1>
-  <h1 class="hover:text-yellow-300">ARTE VIVO</h1>
-  <h1 class="hover:text-yellow-300">COLLAGE</h1>
-  <h1 class="hover:text-yellow-300">ESCRITOS</h1>
-</div> -->
+</div>

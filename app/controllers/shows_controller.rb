@@ -9,6 +9,7 @@ class ShowsController < ApplicationController
   end
 
   private
+
   def set_shows
     @shows = Show.all
   end

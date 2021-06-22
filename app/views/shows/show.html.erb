@@ -1,2 +1,17 @@
-<h1>Shows#show</h1>
-<p>Find me in app/views/shows/show.html.erb</p>
+<div class="menu justify-center x-4">
+  <div class="bg-yellow-100 h-screen px-4">
+    <div class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", shows_path %></span></div>
+  </div>
+</div>
+
+<div class="left flex-grow">
+
+  <div class="bg-gray-100 h-screen px-4 pt-5">
+      <h1><%= @show.title %></h1>
+      <h1><%= @show.year %></h1>
+      <h1><%= @show.place %></h1>
+      <h1><%= @show.city %></h1>
+      <h1><%= @show.country %></h1>
+  </div>
+
+</div>

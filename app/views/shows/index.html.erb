@@ -1,18 +1,15 @@
-<div class="flex">
+<div class="left flex-grow">
 
-  <div class="px-4 pt-5 bg-gray-100">
+  <div class="bg-gray-100 h-screen px-4 pt-5">
     <% @shows.each do |show| %>
+        <h1 class="text-4xl hover:text-yellow-300"><%= link_to show.title, show_path(show) %></h1>
 
-      <h1><%= show.title %></h1>
+<!--       <h1><%= show.title %></h1>
       <h1><%= show.year %></h1>
       <h1><%= show.place %></h1>
       <h1><%= show.city %></h1>
-      <h1><%= show.country %></h1>
+      <h1><%= show.country %></h1> -->
     <% end %>
   </div>
 
 </div>
-
-
-
-
