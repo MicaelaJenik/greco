@@ -9,6 +9,7 @@ class PhasesController < ApplicationController
   end
 
   private
+
   def set_phases
     @phases = Phase.all
   end

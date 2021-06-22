@@ -8,6 +8,7 @@ puts 'Creating El Nascimiento'
 
 puts 'Creating Cristo del 63'
 @cristo63 = Show.create(title: 'Cristo del 63', subtitle: 'Una performance unica', year: 1963, place: 'Galeria', city: 'Roma', country: 'Italia', about: 'Paso un dia en la carcel', details: 'Luego se tuvo que fugar de Italia')
+@malaletra = Show.create(title: 'La mala letra', subtitle: 'Papeles de Alberto Greco', year: 2019, place: 'Galeria', city: 'Buenos Aires', country: 'Argentina', about: 'En los dibujos que realizó en Madrid y Piedralaves entre 1963 y 1964, Alberto Greco combinó fragmentos y restos heterogéneos de imágenes y textos que involucran y hacen pulsar temporalidades antagónicas', details: 'Concibió sus obras, en palabras de Antonio Saura, como un diario de adiciones y de superposiciones, como obedeciendo a un sismógrafo interior')
 
 puts 'Creating Phases'
 @primera_etapa = Phase.create(title: 'PRIMERA ETAPA', subtitle: 'París' , starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion',
@@ -41,11 +42,11 @@ Era como si, sobre el papel, Greco dejara escapar su ser, su impulso primero. En
 Greco tenía, ante todo, los ojos más grandes que hubiera, todo lo veía y todo lo registraba. Debe ser por eso que también tenía que contarlo o sacarlo un poco fuera de sí, y no podía ser de una forma tranquila y ordenada.
 Greco nos muestra en sus dibujos el mundo en que vivía, lo que pasaba a su alrededor, una crónica de la vida misma.')
 
-@collage = Phase.create(title: 'COLLAGE', subtitle: 'Para Greco no había reglas en su trabajo', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: 'Para Greco no había reglas en su trabajo, pintaba las telas dibujando y dibujaba en sus papeles con otros papeles. Con toda su libertad, Greco llevaba su vida al espacio del arte, incluso en los títulos de sus dibujos: “Con qué guita pago el Whisky?”.
-Un verdadero collage, y no sólo porque usaba papeles sacados de revistas en sus cuadros, sino porque realmente sacaba las cosas de contexto para abrirlas a un nuevo espacio.
-La obra que realiza en Madrid a partir del 63, muestran una caótica mixtura de pintura, escritura, tachaduras, huellas, collage, marcas de su entorno y la realidad que circundaba.
-Incluye conversaciones con amigos, letras de tango, representaciones de objetos en situaciones del momento, ideas políticas y sociales, imágenes que remiten al graffiti callejero, a la publicidad y a toda una anarquía de la forma. Saura escribió sobre estas obras: “Cada obra de Alberto Greco es en sí misma un fragmento de vida, pero es también parte de un todo inconcluso, proliferante y generoso, y como la vida misma, un lugar de encuentros y experiencias, un poblado espacio en que el arte se reúne azarosos acontecimientos, lúcidas afirmaciones, dramáticas situaciones y alzamientos bienaventurados”')
+# @collage = Phase.create(title: 'COLLAGE', subtitle: 'Para Greco no había reglas en su trabajo', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: 'Para Greco no había reglas en su trabajo, pintaba las telas dibujando y dibujaba en sus papeles con otros papeles. Con toda su libertad, Greco llevaba su vida al espacio del arte, incluso en los títulos de sus dibujos: “Con qué guita pago el Whisky?”.
+# Un verdadero collage, y no sólo porque usaba papeles sacados de revistas en sus cuadros, sino porque realmente sacaba las cosas de contexto para abrirlas a un nuevo espacio.
+# La obra que realiza en Madrid a partir del 63, muestran una caótica mixtura de pintura, escritura, tachaduras, huellas, collage, marcas de su entorno y la realidad que circundaba.
+# Incluye conversaciones con amigos, letras de tango, representaciones de objetos en situaciones del momento, ideas políticas y sociales, imágenes que remiten al graffiti callejero, a la publicidad y a toda una anarquía de la forma. Saura escribió sobre estas obras: “Cada obra de Alberto Greco es en sí misma un fragmento de vida, pero es también parte de un todo inconcluso, proliferante y generoso, y como la vida misma, un lugar de encuentros y experiencias, un poblado espacio en que el arte se reúne azarosos acontecimientos, lúcidas afirmaciones, dramáticas situaciones y alzamientos bienaventurados”')
 
-@arte_vivo = Phase.create(title: 'ARTE VIVO', subtitle: 'no hay que olvidar lo bueno que conquistamos', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: '')
+# @arte_vivo = Phase.create(title: 'ARTE VIVO', subtitle: 'no hay que olvidar lo bueno que conquistamos', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: '')
 
-@escritos = Phase.create(title: 'ESCRITOS', subtitle: 'Los Existencialistas', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: '')
+# @escritos = Phase.create(title: 'ESCRITOS', subtitle: 'Los Existencialistas', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: '')

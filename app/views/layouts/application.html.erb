@@ -15,12 +15,15 @@
   <body>
     <div class="text-gray-600 flex">
 
+      <% unless content_for? :menu %>
         <ul class="menu justify-center px-4 pb-2">
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "GRECO", root_path %></span></li>
+          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
+          <!-- <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "GRECO", root_path %></span></li> -->
           <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
           <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li>
           <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
         </ul>
+       <% end %>
 
 
       <%= yield %>
