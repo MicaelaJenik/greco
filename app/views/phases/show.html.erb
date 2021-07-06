@@ -1,5 +1,5 @@
 <div class="menu justify-center x-4">
-  <div class="bg-gray-100 h-screen px-4">
+  <div class="bg-yellow-100 h-screen px-4">
     <div class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", phases_path %></span></div>
     <% @phases.each do |phase| %>
       <div class="menu_i hover:text-yellow-300"><%= link_to phase.title, phase_path(phase), class:"menu_i_tx hover:text-yellow-300" %></div>
@@ -8,15 +8,13 @@
 </div>
 
 <div class="py-4 pl-5 flex-grow">
-  <h1 class="text-center pb-5"><%= @phase.title %></h1>
-  <h2 class="text-center"><%= @phase.subtitle %></h2>
-  <h2 class="text-center">De <%= @phase.starting_year %> a <%= @phase.ending_year %></h2>
+  <h1 class=" pb-5 text-4xl"><%= @phase.title %></h1>
+  <h2 class=""><%= @phase.subtitle %></h2>
+  <h2 class="">De <%= @phase.starting_year %> a <%= @phase.ending_year %></h2>
   <h2 class="pb-5"><%= @phase.about %></h2>
-  <h1>jghsadbhnvmklpad fepifnqpfnowoie qpwiuefhpwoefdwpoiefpowqie wqieufhjpwoqeifjpjoq qwiefhpqwiou</h1>
-  <h1>Greco viaja a París en 1954 con una beca del gobierno francés y se instala por 2 años. Es quizás aquí donde comienza su trabajo como artista. En una carta dirigida a su tía Elena Ferrari escribe: “Voy a todas las exposiciones. (…) Pinto mucho, es lo que más hago. Son cosas abstractas y salen bien”.</h1>
-</div>
+  </div>
 
-<div class="left w-1/6">
+<!-- <div class="left w-1/6">
   <div style="height: 1800px;">
     <div>
       <%= image_tag asset_path('nun2.png') %>
@@ -36,5 +34,5 @@
     <div>
       <%= image_tag asset_path('grande.jpg') %>
     </div>
-  </div>
+  </div> -->
 </div>

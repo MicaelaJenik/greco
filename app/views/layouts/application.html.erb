@@ -12,23 +12,29 @@
     <%= favicon_link_tag asset_path('favicon.png') %>
   </head>
 
-  <body>
+  <body class="font-mono">
     <div class="text-gray-600 flex">
 
       <% unless content_for? :menu %>
-        <ul class="menu justify-center px-4">
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
-          <!-- <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "GRECO", root_path %></span></li> -->
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "OBRAS", artworks_path %></span></li>
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li>
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
-          <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "🔺", welcome_path %></span></li>
-        </ul>
+
+        <div class="h-screen px-4">
+          <ul class="menu justify-center ">
+            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
+            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
+            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li>
+            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
+            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "OBRAS", artworks_path %></span></li>
+          </ul>
+
+          <p class="text-center text-2xl hover:text-yellow-300"><%= link_to "★", welcome_path %></p>
+
+        </div>
+
        <% end %>
 
 
       <%= yield %>
+
     </div>
   </body>
 </html>
