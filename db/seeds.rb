@@ -2,6 +2,7 @@ puts 'Destroying'
 Artwork.delete_all
 Show.delete_all
 Phase.delete_all
+Live.delete_all
 
 puts 'Creating El Nascimiento'
 @elnascimiento = Artwork.create(title: 'El Nascimiento', year: 1950, height: 10, width: 10, depth: 10, technique: 'Tinta sobre papel', about: 'Pintado en Buenos Aires', description: 'Bajo la influencia de alucinógenos', period: 'Informalismo')
@@ -50,3 +51,42 @@ Greco nos muestra en sus dibujos el mundo en que vivía, lo que pasaba a su alre
 # @arte_vivo = Phase.create(title: 'ARTE VIVO', subtitle: 'no hay que olvidar lo bueno que conquistamos', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: '')
 
 # @escritos = Phase.create(title: 'ESCRITOS', subtitle: 'Los Existencialistas', starting_year: 1910, ending_year: 1910, about: 'Greco en su maxima expresion', details: '')
+
+
+puts 'Creating Lives'
+@que_grande_sos = Live.create(title: 'Que grande sos', about: 'Que grande sos', details: 'Que grande sos')
+@la_pittura_finita = Live.create(title: 'La pittura è finita. Viva el Arte Vivo-Dito', about: 'La pittura è finita. Viva el Arte Vivo-Dito', details: 'La pittura è finita. Viva el Arte Vivo-Dito')
+@vivo_dito_1 = Live.create(title: 'Vivo-Dito Arte Vivo, Roma 1', about: 'Vivo-Dito Arte Vivo, Roma 1', details: 'Vivo-Dito Arte Vivo, Roma 1')
+@vivo_dito_2 = Live.create(title: 'Vivo-Dito Arte Vivo, Roma 2', about: 'Vivo-Dito Arte Vivo, Roma 2', details: 'Vivo-Dito Arte Vivo, Roma 2')
+@piedralaves = Live.create(title: 'Greco en Piedralaves', about: 'Greco en Piedralaves', details: 'Greco en Piedralaves')
+@cristo_63 = Live.create(title: 'Cristo 63', about: 'Cristo 63', details: 'Cristo 63')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
