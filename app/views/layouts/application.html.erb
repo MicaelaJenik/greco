@@ -19,17 +19,17 @@
 
 
         <div class="h-screen px-4">
-        <p class="text-center pt-3 pb-2 text-2xl hover:text-yellow-300"><%= link_to "★", welcome_path %></p>
-          <ul class="menu justify-center ">
-            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
-            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li>
-            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ARTE VIVO", lives_path %></span></li>
-            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "OBRAS", artworks_path %></span></li>
-            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
-            <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
-          </ul>
-
-
+          <div style="position: fixed;">
+            <p class="text-center pt-3 pb-2 text-2xl hover:text-yellow-300"><%= link_to "★", welcome_path %></p>
+            <ul class="menu justify-center ">
+              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
+              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li>
+              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ARTE VIVO", lives_path %></span></li>
+              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "OBRAS", artworks_path %></span></li>
+              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
+              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
+            </ul>
+          </div>
         </div>
 
        <% end %>
