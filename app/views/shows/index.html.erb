@@ -1,5 +1,4 @@
 <div class="left flex-grow">
-
   <div class="bg-gray-100 h-screen px-4 pt-5">
     <% @shows.each do |show| %>
         <h1 class="text-4xl hover:text-yellow-300 uppercase"><%= link_to show.title, show_path(show) %></h1>

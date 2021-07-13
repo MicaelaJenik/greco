@@ -1,7 +1,7 @@
 <div class="left flex-grow">
   <div class="bg-gray-100 h-screen px-4 pt-5">
     <% @lives.each do |live| %>
-    <h1 class="text-4xl hover:text-yellow-300 uppercase"><%= link_to live.title, lives_path(live) %></h1>
+      <h1 class="text-4xl hover:text-yellow-300 uppercase"><%= link_to live.title, life_path(live) %></h1>
     <% end %>
   </div>
 </div>

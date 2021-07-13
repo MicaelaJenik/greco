@@ -14,3 +14,6 @@ class ShowsController < ApplicationController
     @shows = Show.all
   end
 end
+
+
+
