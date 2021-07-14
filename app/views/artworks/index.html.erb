@@ -1,7 +1,7 @@
 <div class="left flex-grow">
-  <div class="bg-gray-100 h-screen px-4 pt-5">
+  <div class="bg-gray-100 h-screen px-12 py-12">
     <% @artworks.each do |artwork| %>
-      <h1 class="text-4xl hover:text-yellow-300 uppercase"><%= link_to artwork.title, artwork_path(artwork) %></h1>
+      <h1 class="text-4xl hover:text-yellow-500 uppercase animate__animated animate__fadeInDown"><%= link_to artwork.title, artwork_path(artwork) %></h1>
     <% end %>
   </div>
 </div>

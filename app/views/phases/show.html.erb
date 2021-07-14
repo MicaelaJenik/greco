@@ -1,13 +1,13 @@
 <div class="menu justify-center x-4 w-14 flex-none">
-  <div class="bg-yellow-100 h-screen px-4">
+  <div class="bg-gray-300 h-screen px-4 pt-12">
     <% @phases.each do |phase| %>
-      <div class="menu_i hover:text-yellow-300 pt-3 pb-2"><%= link_to phase.title, phase_path(phase), class:"menu_i_tx hover:text-yellow-300" %></div>
+      <div class="menu_i hover:text-white pt-3 pb-2"><%= link_to phase.subtitle, phase_path(phase), class:"menu_i_tx hover:text-white" %></div>
     <% end %>
-    <div class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", phases_path %></span></div>
+    <div class="menu_i hover:text-white"><span class="menu_i_tx"><%= link_to "✕", phases_path %></span></div>
   </div>
 </div>
 
-<div class="flex-grow encapsulate">
+<div class="flex-grow encapsulate pt-12">
   <h1 class=" pb-5 text-4xl"><%= @phase.title %></h1>
   <h2 class=""><%= @phase.subtitle %></h2>
   <h2 class="">De <%= @phase.starting_year %> a <%= @phase.ending_year %></h2>

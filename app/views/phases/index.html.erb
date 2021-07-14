@@ -1,7 +1,19 @@
-<div class="left flex-grow">
-  <div class="bg-gray-100 h-screen px-4 pt-5">
+<div class="menu justify-center x-4 w-14 flex-none">
+  <div class="bg-gray-300 h-screen px-4 pt-12">
     <% @phases.each do |phase| %>
-    <h1 class="text-4xl hover:text-yellow-300"><%= link_to phase.title, phase_path(phase) %></h1>
+      <div class="menu_i hover:text-white pt-3 pb-2 uppercase animate__animated animate__fadeInDown"><%= link_to phase.subtitle, phase_path(phase), class:"menu_i_tx hover:text-white" %></div>
+    <% end %>
+    <div class="menu_i hover:text-white"><span class="menu_i_tx"><%= link_to "✕", phases_path %></span></div>
+  </div>
+</div>
+
+
+<!-- <div class="left flex-grow">
+  <div class="bg-gray-100 h-screen px-12 py-12">
+    <% @phases.each do |phase| %>
+    <h1 class="text-4xl hover:text-yellow-500 animate__animated animate__fadeInDown"><%= link_to phase.title, phase_path(phase) %></h1>
     <% end %>
   </div>
 </div>
+ -->
+

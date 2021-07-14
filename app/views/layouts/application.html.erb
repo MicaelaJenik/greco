@@ -6,10 +6,12 @@
     <%= csp_meta_tag %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag asset_path('favicon.png') %>
+
   </head>
 
   <body class="font-mono">
@@ -20,14 +22,17 @@
 
         <div class="h-screen px-4 w-14 flex-none">
           <div style="position: fixed;">
-            <p class="text-center pt-3 pb-2 text-2xl hover:text-yellow-300"><%= link_to "★", welcome_path %></p>
-            <ul class="menu justify-center ">
-              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
-              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li>
-              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "OBRAS", artworks_path %></span></li>
-              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
-              <li class="menu_i hover:text-yellow-300"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
+            <ul class="menu justify-center py-12">
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "OBRAS", phases_path %></span></li>
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "ARTE VIVO", lives_path %></span></li>
+              <!-- <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li> -->
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PUBLICACIONES", shows_path %></span></li>
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PRENSA", shows_path %></span></li>
+              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
             </ul>
+            <p class="text-center pt-3 pb-2 text-2xl hover:text-yellow-500"><%= link_to "★", welcome_path %></p>
           </div>
         </div>
 
