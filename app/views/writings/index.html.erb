@@ -1,2 +1,17 @@
-<h1>Writings#index</h1>
-<p>Find me in app/views/writings/index.html.erb</p>
+<div class="menu justify-center x-4 w-14 flex-none">
+  <div class="bg-gray-300 h-screen px-4 pt-12">
+    <% @writings.each do |writing| %>
+    <h1 class="menu_i hover:text-white pt-3 pb-2 uppercase animate__animated animate__fadeInDown"><%= link_to writing.title, writing_path(writing), class:"menu_i_tx over:text-white" %></h1>
+
+<!--       <h1><%= writing.title %></h1>
+      <h1><%= writing.year %></h1>
+      <h1><%= writing.place %></h1>
+      <h1><%= writing.city %></h1>
+      <h1><%= writing.country %></h1> -->
+      <% end %>
+    </div>
+    <div class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "✕", writings_path %></span></div>
+  </div>
+
+
+
