@@ -1,4 +1,36 @@
 <div class="menu justify-center x-4 w-14 flex-none">
+  <div class="bg-gray-300 h-screen px-4 pt-12">
+    <% @shows.each do |show| %>
+      <h1 class="menu_i hover:text-white pt-3 pb-2 uppercase animate__animated animate__fadeInDown"><%= link_to show.subtitle, show_path(show), class:"menu_i_tx over:text-white" %></h1>
+    <% end %>
+    <!-- <div class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "✕", phases_path %></span></div> -->
+  </div>
+</div>
+
+<div>
+  <% @shows.each do |show| %>
+    <h1 class=""><%= show.year %></h1>
+    <h1><%= show.place %></h1>
+    <h1><%= show.city %></h1>
+    <h1><%= show.country %></h1>
+    <h1><%= show.about %></h1>
+  <% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="menu justify-center x-4 w-14 flex-none">
   <div class="bg-yellow-100 h-screen px-4">
     <div class="menu_i hover:text-yellow-500 pt-7 pb-4"><span class="menu_i_tx">Proxima > </div>
     <div class="menu_i hover:text-yellow-500"><span class="menu_i_tx"> < Anterior</div>
@@ -18,3 +50,4 @@
   </div>
 
 </div>
+ -->

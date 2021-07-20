@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Greco</title>
+    <title>albertogreco.com</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= favicon_link_tag asset_path('favicon.png') %>
+    <%= favicon_link_tag asset_path('icono.png') %>
 
   </head>
 
@@ -20,20 +20,24 @@
       <% unless content_for? :menu %>
 
 
-        <div class="h-screen px-4 w-14 flex-none">
-          <div style="position: fixed;">
-            <ul class="menu justify-center py-12">
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "OBRAS", phases_path %></span></li>
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "ARTE VIVO", lives_path %></span></li>
-              <!-- <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li> -->
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PUBLICACIONES", writings_path %></span></li>
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PRENSA", shows_path %></span></li>
-              <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
+        <div class=" px-4 w-14 flex-none">
+          <!-- <div style="position: fixed;"> -->
+            <ul class="menu py-12">
+              <div class="">
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "BIOGRAFIA", bio_path %></span></li>
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "OBRAS", phases_path %></span></li>
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "ARTE VIVO", lives_path %></span></li>
+                <!-- <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "ETAPAS", phases_path %></span></li> -->
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "MUESTRAS", shows_path %></span></li>
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PUBLICACIONES", writings_path %></span></li>
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PRENSA", shows_path %></span></li>
+                <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
+              </div>
+              <div class="menu_i hover:text-yellow-500"><%= image_tag asset_path('icono.png') %></div>
             </ul>
-            <p class="text-center pt-3 pb-2 text-2xl hover:text-yellow-500"><%= link_to "★", welcome_path %></p>
-          </div>
+
+
+          <!-- </div> -->
         </div>
 
        <% end %>
