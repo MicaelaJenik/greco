@@ -33,7 +33,8 @@
                 <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "PRENSA", shows_path %></span></li>
                 <li class="menu_i hover:text-yellow-500"><span class="menu_i_tx"><%= link_to "✕", root_path %></span></li>
               </div>
-              <div class="menu_i hover:text-yellow-500"><%= image_tag asset_path('icono.png') %></div>
+              <div class="menu_i"> <%= link_to(image_tag("/icono.png"), welcome_path) %></div>
+
             </ul>
 
 

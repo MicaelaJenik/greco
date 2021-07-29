@@ -8,6 +8,22 @@
 </div>
 
 
+<div class="pt-12 pl-12">
+  <h1 class="pb-6 text-yellow-500 text-4xl animate__animated animate__fadeInDown">ARTE VIVO</h1>
+
+  <div>
+    <% @lives.each do |live| %>
+    <div class="py-2">
+      <h1><%= live.title %></h1>
+      <h1><%= live.about %></h1>
+      <h1> <%= live.details %></h1>
+    </div>
+    <% end %>
+  </div>
+
+</div>
+
+
 <!-- <div class="left flex-grow">
   <div class="bg-gray-100 h-screen px-12 py-12">
     <% @lives.each do |live| %>
